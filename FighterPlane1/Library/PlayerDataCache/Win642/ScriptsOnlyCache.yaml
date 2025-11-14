@@ -2,18 +2,62 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - Coin
+    - CoinSpawner
     - Enemy
     - EnemySpawner
     - GameManager
     - Player
     - PlayerController
+    - ScoreManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+  serializedClasses:
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.PersistentCallGroup
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    - UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord
+    - UnityEngine.TextCore.LowLevel.GlyphValueRecord
+    UnityEngine.UI:
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/Game.unity:
@@ -35,6 +79,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -46,18 +98,44 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25432}
+      Script: {instanceID: 25548}
     - Class: 114
-      Script: {instanceID: 25528}
+      Script: {instanceID: 25578}
     - Class: 114
-      Script: {instanceID: 26418}
+      Script: {instanceID: 25676}
     - Class: 114
-      Script: {instanceID: 27714}
+      Script: {instanceID: 25800}
     - Class: 114
-      Script: {instanceID: 28936}
+      Script: {instanceID: 26212}
     - Class: 114
-      Script: {instanceID: 29268}
+      Script: {instanceID: 26284}
+    - Class: 114
+      Script: {instanceID: 26582}
+    - Class: 114
+      Script: {instanceID: 27412}
+    - Class: 114
+      Script: {instanceID: 27620}
+    - Class: 114
+      Script: {instanceID: 27898}
+    - Class: 114
+      Script: {instanceID: 28590}
+    - Class: 114
+      Script: {instanceID: 28818}
+    - Class: 114
+      Script: {instanceID: 29142}
+    - Class: 114
+      Script: {instanceID: 29480}
+    - Class: 114
+      Script: {instanceID: 29964}
+    - Class: 114
+      Script: {instanceID: 30202}
+    - Class: 114
+      Script: {instanceID: 31032}
+    - Class: 114
+      Script: {instanceID: 31088}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -66,6 +144,16 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -176,6 +264,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c1fbe49500931559602092d93a219219
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Coin
   - hash:
       serializedVersion: 2
       Hash: 682dfc653b22feea53b38adb3bc66414
@@ -460,6 +554,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: e38b5efccecd0c4eec015a2b6ed544a6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CoinSpawner
+  - hash:
+      serializedVersion: 2
       Hash: ad49e20f31ed572e586aa8bbaafb591b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -494,6 +594,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 3a1cbe623aa7134d92091ae6abc54253
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: e88d71ef93aba4e7faf243430f6a10ce
@@ -899,4 +1005,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Game.unity
-  playerPath: /Users/lillyrettman/Desktop/code/Fighter Planes Spring 2025.exe
+  playerPath: C:/Users/jesha/OneDrive/Desktop/Unity/fighterjet builds/Fighter Planes
+    Spring 2025.exe
